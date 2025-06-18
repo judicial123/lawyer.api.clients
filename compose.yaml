@@ -1,0 +1,9 @@
+﻿services:
+  lawyer.api.clients.webapi:
+    image: lawyer.api.clients.webapi
+    build:
+      context: .
+      dockerfile: lawyer.api.clients.webapi/Dockerfile
+    ports: 
+     - 8080:5124
+
