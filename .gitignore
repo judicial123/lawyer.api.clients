@@ -26,9 +26,16 @@
 .vs/
 [Bb]in/
 [Oo]bj/
+**/[Oo]bj/
+/**/obj/
 _UpgradeReport_Files/
 [Pp]ackages/
 
 Thumbs.db
 Desktop.ini
 .DS_Store
+/.idea/**/.idea/.name
+/.idea/**/.idea/AndroidProjectSystem.xml
+
+
+/lawyer.api.clients.webapi/obj/
