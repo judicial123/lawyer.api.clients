@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lawyer.api.clients.domain", "lawyer.api.clients.domain\lawyer.api.clients.domain.csproj", "{40301E12-DA55-417D-AFC0-729FBAE8A210}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lawyer.api.clients.application", "lawyer.api.clients.application\lawyer.api.clients.application.csproj", "{939D093F-1DFF-44D8-8DE9-E5CC1BE51B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lawyer.api.clients.webapi", "lawyer.api.clients.webapi\lawyer.api.clients.webapi.csproj", "{63D58C46-82CC-4559-848C-13D767FEA21F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lawyer.api.clients.datastore.mssql", "lawyer.api.clients.datastore.mssql\lawyer.api.clients.datastore.mssql.csproj", "{DE72D74E-2153-46EB-ABD6-42EDE500B55B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40301E12-DA55-417D-AFC0-729FBAE8A210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40301E12-DA55-417D-AFC0-729FBAE8A210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40301E12-DA55-417D-AFC0-729FBAE8A210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40301E12-DA55-417D-AFC0-729FBAE8A210}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939D093F-1DFF-44D8-8DE9-E5CC1BE51B39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939D093F-1DFF-44D8-8DE9-E5CC1BE51B39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939D093F-1DFF-44D8-8DE9-E5CC1BE51B39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939D093F-1DFF-44D8-8DE9-E5CC1BE51B39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D58C46-82CC-4559-848C-13D767FEA21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D58C46-82CC-4559-848C-13D767FEA21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D58C46-82CC-4559-848C-13D767FEA21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D58C46-82CC-4559-848C-13D767FEA21F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE72D74E-2153-46EB-ABD6-42EDE500B55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE72D74E-2153-46EB-ABD6-42EDE500B55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE72D74E-2153-46EB-ABD6-42EDE500B55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE72D74E-2153-46EB-ABD6-42EDE500B55B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

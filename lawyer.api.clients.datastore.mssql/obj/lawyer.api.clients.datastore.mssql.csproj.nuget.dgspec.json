@@ -1,0 +1,238 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.datastore.mssql/lawyer.api.clients.datastore.mssql.csproj": {}
+  },
+  "projects": {
+    "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/lawyer.api.clients.application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/lawyer.api.clients.application.csproj",
+        "projectName": "lawyer.api.clients.application",
+        "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/lawyer.api.clients.application.csproj",
+        "packagesPath": "/Users/luisvillarroel/.nuget/packages/",
+        "outputPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luisvillarroel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj": {
+                "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.datastore.mssql/lawyer.api.clients.datastore.mssql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.datastore.mssql/lawyer.api.clients.datastore.mssql.csproj",
+        "projectName": "lawyer.api.clients.datastore.mssql",
+        "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.datastore.mssql/lawyer.api.clients.datastore.mssql.csproj",
+        "packagesPath": "/Users/luisvillarroel/.nuget/packages/",
+        "outputPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.datastore.mssql/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luisvillarroel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/lawyer.api.clients.application.csproj": {
+                "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.application/lawyer.api.clients.application.csproj"
+              },
+              "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj": {
+                "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj",
+        "projectName": "lawyer.api.clients.domain",
+        "projectPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/lawyer.api.clients.domain.csproj",
+        "packagesPath": "/Users/luisvillarroel/.nuget/packages/",
+        "outputPath": "/Users/luisvillarroel/Documents/Lawyer/laywer.api.clients/lawyer.api.clients.domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/luisvillarroel/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

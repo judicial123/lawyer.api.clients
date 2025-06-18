@@ -1,0 +1,6 @@
+@lawyer.api.clients.webapi_HostAddress = http://localhost:5124
+
+GET {{lawyer.api.clients.webapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
