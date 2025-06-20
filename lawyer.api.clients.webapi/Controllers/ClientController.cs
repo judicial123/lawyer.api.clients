@@ -4,10 +4,12 @@ using lawyer.api.clients.application.UseCases.Client.Create;
 using lawyer.api.clients.application.UseCases.Client.Update;
 using lawyer.api.clients.application.UseCases.Client.Delete;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace lawyer.api.clients.webapi.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ClientController : ControllerBase
@@ -19,20 +21,20 @@ namespace lawyer.api.clients.webapi.Controllers
             _mediator = mediator;
         }
         
-        [HttpGet]
+        [HttpGet()]
         public async Task<ActionResult<List<ClientDto>>> Get()
         {
             var clients = await _mediator.Send(new GetClientsQuery());
             return Ok(clients);
         }
-
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<ClientDto>> Get(int id)
         {
             var client = await _mediator.Send(new GetClientQuery(id));
             return Ok(client);
         }
-
+        
         [HttpPost]
         [ProducesResponseType(201)]
         [ProducesResponseType(400)]
@@ -42,7 +44,7 @@ namespace lawyer.api.clients.webapi.Controllers
             var url = Url.Action(nameof(Get), new { id });
             return Created(url, id);
         }
-
+        
         [HttpPut]
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
@@ -54,7 +56,7 @@ namespace lawyer.api.clients.webapi.Controllers
             await _mediator.Send(command);
             return NoContent();
         }
-
+        
         [HttpDelete("{id}")]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
