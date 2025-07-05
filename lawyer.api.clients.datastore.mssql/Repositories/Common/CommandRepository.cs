@@ -1,27 +1,30 @@
+using System.Text.Json;
 using AutoMapper;
-using awyer.api.clients.application.Contracts.Interfases.Persistence.Common;
+using lawyer.api.clients.application.Contracts.Interfaces.Persistence.Common;
 using lawyer.api.clients.datastore.mssql.DatabaseContext;
 using lawyer.api.clients.datastore.mssql.Model.Common;
 using lawyer.api.clients.domain.Common;
 
 namespace lawyer.api.clients.datastore.mssql.Repositories.Common;
 
-public class CommandRepository <T,TEntity>: ICommandRepository<T> 
-    where T : BaseEntity  
+public class CommandRepository<T, TEntity> : ICommandRepository<T>
+    where T : BaseEntity
     where TEntity : EFEntity
 {
     private readonly LawyersContext _dbContext;
     private readonly IMapper _mapper;
+
     public CommandRepository(LawyersContext dbContext, IMapper mapper)
     {
         _dbContext = dbContext;
         _mapper = mapper;
     }
+
     public async Task CreateAsync(T entity)
     {
         var dbEntity = _mapper.Map<TEntity>(entity);
-        
-        Console.WriteLine($"Datos antes de guardar: {System.Text.Json.JsonSerializer.Serialize(dbEntity)}");
+
+        Console.WriteLine($"Datos antes de guardar: {JsonSerializer.Serialize(dbEntity)}");
 
         _dbContext.Add((object)dbEntity);
         await _dbContext.SaveChangesAsync();
@@ -44,5 +47,4 @@ public class CommandRepository <T,TEntity>: ICommandRepository<T>
         _dbContext.Remove(dbEntity);
         await _dbContext.SaveChangesAsync();
     }
-    
 }

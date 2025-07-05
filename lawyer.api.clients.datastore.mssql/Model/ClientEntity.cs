@@ -16,6 +16,5 @@ public class ClientEntity : EFEntity
 
     public string PhotoUrl { get; set; } // URL of the profile photo
 
-    [Column(TypeName = "TEXT")]
-    public string Notes { get; set; } // Additional comments or information about the client
+    [Column(TypeName = "TEXT")] public string Notes { get; set; } // Additional comments or information about the client
 }

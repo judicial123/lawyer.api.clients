@@ -6,7 +6,7 @@ public class EFEntity
 {
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
-    
+
 
     public DateTime? DateCreated { get; set; }
     public DateTime? DateModified { get; set; }

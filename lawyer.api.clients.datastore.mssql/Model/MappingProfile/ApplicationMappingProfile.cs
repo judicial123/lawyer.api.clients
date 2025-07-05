@@ -1,14 +1,12 @@
 using AutoMapper;
-using lawyer.api.domain;
-using lawyer.api.clients.datastore.mssql.Model;
+using lawyer.api.clients.domain;
 
-namespace lawyer.api.clients.datastore.mssql.Model.MappingProfiles
+namespace lawyer.api.clients.datastore.mssql.Model.MappingProfiles;
+
+public class ApplicationMappingProfile : Profile
 {
-    public class ApplicationMappingProfile : Profile
+    public ApplicationMappingProfile()
     {
-        public ApplicationMappingProfile()
-        {
-            CreateMap<Client, ClientEntity>().ReverseMap();
-        }
+        CreateMap<Client, ClientEntity>().ReverseMap();
     }
 }

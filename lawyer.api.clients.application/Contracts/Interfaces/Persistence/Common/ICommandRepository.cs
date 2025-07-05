@@ -1,6 +1,6 @@
 using lawyer.api.clients.domain.Common;
 
-namespace awyer.api.clients.application.Contracts.Interfases.Persistence.Common;
+namespace lawyer.api.clients.application.Contracts.Interfaces.Persistence.Common;
 
 public interface ICommandRepository<T> where T : BaseEntity
 {

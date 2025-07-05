@@ -8,24 +8,24 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.17"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.4">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\lawyer.api.clients.application\lawyer.api.clients.application.csproj" />
-      <ProjectReference Include="..\lawyer.api.clients.datastore.mssql\lawyer.api.clients.datastore.mssql.csproj" />
-      <ProjectReference Include="..\lawyer.api.clients.domain\lawyer.api.clients.domain.csproj" />
+        <ProjectReference Include="..\lawyer.api.clients.application\lawyer.api.clients.application.csproj"/>
+        <ProjectReference Include="..\lawyer.api.clients.datastore.mssql\lawyer.api.clients.datastore.mssql.csproj"/>
+        <ProjectReference Include="..\lawyer.api.clients.domain\lawyer.api.clients.domain.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
 </Project>

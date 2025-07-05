@@ -4,16 +4,16 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>awyer.api.clients.application</RootNamespace>
+        <RootNamespace>lawyer.api.clients.application</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\lawyer.api.clients.domain\lawyer.api.clients.domain.csproj" />
+        <ProjectReference Include="..\lawyer.api.clients.domain\lawyer.api.clients.domain.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoMapper" Version="13.0.1" />
-      <PackageReference Include="MediatR" Version="12.4.1" />
+        <PackageReference Include="AutoMapper" Version="13.0.1"/>
+        <PackageReference Include="MediatR" Version="12.4.1"/>
     </ItemGroup>
 
 </Project>

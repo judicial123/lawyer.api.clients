@@ -1,15 +1,16 @@
 using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using lawyer.api.clients.application;
 using lawyer.api.clients.datastore.mssql;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
-builder.Services.AddCors(options => {
+builder.Services.AddCors(options =>
+{
     options.AddPolicy("all", tmpBuilder =>
         tmpBuilder.AllowAnyOrigin()
             .AllowAnyHeader()
@@ -20,13 +21,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    options.SwaggerDoc("v1", new OpenApiInfo
     {
         Title = "Lawyer API",
         Version = "v1",
         Description = "API for managing Lawyer operations."
     });
-    
+
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -48,17 +49,14 @@ builder.Services.AddSwaggerGen(options =>
                     Type = ReferenceType.SecurityScheme
                 }
             },
-            new string[] {}
+            new string[] { }
         }
     });
 });
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var secretKey = jwtSettings["Key"];
-if (secretKey == null)
-{
-    throw new Exception("JWT secret key not found");
-}
+if (secretKey == null) throw new Exception("JWT secret key not found");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -81,8 +79,8 @@ var app = builder.Build();
 
 //if (app.Environment.IsDevelopment())
 //{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 //}
 
 app.UseCors("all");
