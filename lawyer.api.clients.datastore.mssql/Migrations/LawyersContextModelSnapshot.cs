@@ -61,7 +61,7 @@ namespace lawyer.api.clients.datastore.mssql.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Clients", "clients");
                 });
 #pragma warning restore 612, 618
         }

@@ -3,7 +3,7 @@ using lawyer.api.clients.datastore.mssql.Model.Common;
 
 namespace lawyer.api.clients.datastore.mssql.Model;
 
-[Table("Clients")]
+[Table("Clients", Schema = "clients")]
 public class ClientEntity : EFEntity
 {
     public string PhoneNumber { get; set; } // Client's phone number

@@ -11,8 +11,12 @@ namespace lawyer.api.clients.datastore.mssql.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.EnsureSchema(
+                name: "clients");
+
             migrationBuilder.CreateTable(
                 name: "Clients",
+                schema: "clients",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -36,7 +40,8 @@ namespace lawyer.api.clients.datastore.mssql.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Clients");
+                name: "Clients",
+                schema: "clients");
         }
     }
 }

@@ -12,8 +12,8 @@ using lawyer.api.clients.datastore.mssql.DatabaseContext;
 namespace lawyer.api.clients.datastore.mssql.Migrations
 {
     [DbContext(typeof(LawyersContext))]
-    [Migration("20250618024503_init")]
-    partial class init
+    [Migration("20250904205521_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,7 +64,7 @@ namespace lawyer.api.clients.datastore.mssql.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Clients");
+                    b.ToTable("Clients", "clients");
                 });
 #pragma warning restore 612, 618
         }
